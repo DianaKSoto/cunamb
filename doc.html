@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>Cunamb</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+
+    <!-- Favicon -->
+    <link href="img/tierra.png" rel="icon" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icon Font Stylesheet -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link
+      href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+
+    <style>
+      .dropdown-toggle::after {
+        margin-left: 0.5rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container-xxl bg-white p-0">
+      <!-- Spinner Start -->
+      <div
+        id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+      >
+        <div
+          class="spinner-border text-primary"
+          style="width: 3rem; height: 3rem"
+          role="status"
+        >
+          <span class="sr-only">Loading...</span>
+        </div>
+      </div>
+      <!-- Spinner End -->
+
+      <!-- Navbar & Hero Start -->
+      <div class="container-xxl position-relative p-0">
+        <nav
+          class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0"
+        >
+          <a href="" class="navbar-brand p-0">
+            <h1 class="text-primary m-0"></h1>
+            <img src="img/logo-cun.png" alt="Logo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+          >
+            <span class="fa fa-bars"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0 pe-4">
+              <a href="index.html" class="nav-item nav-link active">Inicio</a>
+              <a href="about.html" class="nav-item nav-link">Acerca</a>
+              <a href="#" class="nav-item nav-link">Servicios</a>
+              <!--<a href="#" class="nav-item nav-link">Menu</a> -->
+              <a href="contact.html" class="nav-item nav-link">Contacto</a>
+            </div>
+            <a href="doc.html" class="btn btn-primary py-2 px-4"
+              >Documentacion</a
+            >
+          </div>
+        </nav>
+
+        <div class="container-xxl py-5 bg-dark hero-header mb-5">
+          <div class="container text-center my-5 pt-5 pb-4">
+            <h1 class="display-3 text-white mb-3 animated slideInDown">
+              Documentación
+            </h1>
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb justify-content-center text-uppercase"></ol>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <!-- Navbar & Hero End -->
+
+      <!-- Service Start -->
+      <div class="container mt-5">
+        <h1 class="mb-4">Documentación Ambiental en Colombia</h1>
+
+        <!-- Botón de Filtro -->
+        <div class="mb-3">
+          <div class="dropdown">
+            <button
+              class="btn btn-secondary dropdown-toggle"
+              type="button"
+              id="filterDropdown"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Filtrar por Tipo de Documento
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="filterDropdown">
+              <li>
+                <a
+                  class="dropdown-item filter-option"
+                  href="#"
+                  data-filter="all"
+                  >Todos</a
+                >
+              </li>
+              <li>
+                <a
+                  class="dropdown-item filter-option"
+                  href="#"
+                  data-filter="Informe"
+                  >Informe</a
+                >
+              </li>
+              <li>
+                <a
+                  class="dropdown-item filter-option"
+                  href="#"
+                  data-filter="Estudio"
+                  >Estudio</a
+                >
+              </li>
+              <li>
+                <a
+                  class="dropdown-item filter-option"
+                  href="#"
+                  data-filter="Guía"
+                  >Guía</a
+                >
+              </li>
+              <li>
+                <a
+                  class="dropdown-item filter-option"
+                  href="#"
+                  data-filter="Regulación"
+                  >Regulación</a
+                >
+              </li>
+              <li>
+                <a
+                  class="dropdown-item filter-option"
+                  href="#"
+                  data-filter="Artículo Científico"
+                  >Artículo Científico</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="table-responsive">
+          <table class="table table-bordered table-striped">
+            <thead class="table-success">
+              <tr>
+                <th scope="col">Tipo de Documento</th>
+                <th scope="col">Título</th>
+                <th scope="col">Fecha de Publicación</th>
+                <th scope="col">Autor/Entidad</th>
+                <th scope="col">Enlace</th>
+              </tr>
+            </thead>
+            <tbody id="documentTable">
+              <tr class="document-row" data-type="Informe">
+                <td>Informe</td>
+                <td>Impacto Ambiental de la Deforestación en la Amazonía</td>
+                <td>2023-06-15</td>
+                <td>Ministerio de Ambiente</td>
+                <td>
+                  <button
+                    type="button"
+                    class="btn btn-primary btn-sm"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modal1"
+                  >
+                    Ver documento
+                  </button>
+                </td>
+              </tr>
+              <tr class="document-row" data-type="Estudio">
+                <td>Estudio</td>
+                <td>Calidad del Aire en Bogotá 2022</td>
+                <td>2023-04-20</td>
+                <td>Secretaría de Ambiente Bogotá</td>
+                <td>
+                  <button
+                    type="button"
+                    class="btn btn-primary btn-sm"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modal2"
+                  >
+                    Ver documento
+                  </button>
+                </td>
+              </tr>
+              <tr class="document-row" data-type="Guía">
+                <td>Guía</td>
+                <td>
+                  Manual de Buenas Prácticas Ambientales en la Agricultura
+                </td>
+                <td>2022-09-30</td>
+                <td>IDEAM</td>
+                <td>
+                  <button
+                    type="button"
+                    class="btn btn-primary btn-sm"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modal3"
+                  >
+                    Ver documento
+                  </button>
+                </td>
+              </tr>
+              <tr class="document-row" data-type="Regulación">
+                <td>Regulación</td>
+                <td>Normativa sobre Residuos Peligrosos en Colombia</td>
+                <td>2021-12-10</td>
+                <td>Ministerio de Salud y Protección Social</td>
+                <td>
+                  <button
+                    type="button"
+                    class="btn btn-primary btn-sm"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modal4"
+                  >
+                    Ver documento
+                  </button>
+                </td>
+              </tr>
+              <tr class="document-row" data-type="Artículo Científico">
+                <td>Artículo Científico</td>
+                <td>Análisis del Cambio Climático en la Región Andina</td>
+                <td>2023-02-05</td>
+                <td>Universidad Nacional de Colombia</td>
+                <td>
+                  <button
+                    type="button"
+                    class="btn btn-primary btn-sm"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modal5"
+                  >
+                    Ver documento
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Modal 1 -->
+      <div
+        class="modal fade"
+        id="modal1"
+        tabindex="-1"
+        aria-labelledby="modal1Label"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal1Label">
+                Impacto Ambiental de la Deforestación en la Amazonía
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Cerrar"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <p><strong>Autor:</strong> Ministerio de Ambiente</p>
+              <p><strong>Fecha de Publicación:</strong> 15 de junio de 2023</p>
+              <p>
+                <strong>Resumen:</strong> Este informe analiza el impacto de la
+                deforestación en la región amazónica de Colombia, abordando las
+                causas y consecuencias ambientales, así como las políticas
+                implementadas para mitigar estos efectos.
+              </p>
+              <p>
+                <strong>Enlace de descarga:</strong>
+                <a href="#" download="Informe_Deforestacion_Amazonia.pdf"
+                  >Descargar PDF</a
+                >
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Cerrar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal 2 -->
+      <div
+        class="modal fade"
+        id="modal2"
+        tabindex="-1"
+        aria-labelledby="modal2Label"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal2Label">
+                Calidad del Aire en Bogotá 2022
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Cerrar"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <p><strong>Autor:</strong> Secretaría de Ambiente Bogotá</p>
+              <p><strong>Fecha de Publicación:</strong> 20 de abril de 2023</p>
+              <p>
+                <strong>Resumen:</strong> Este estudio ofrece un análisis
+                detallado sobre la calidad del aire en Bogotá durante el año
+                2022, destacando las principales fuentes de contaminación y las
+                medidas adoptadas para mejorar la calidad del aire en la ciudad.
+              </p>
+              <p>
+                <strong>Enlace de descarga:</strong>
+                <a href="#" download="Calidad_Aire_Bogota_2022.pdf"
+                  >Descargar PDF</a
+                >
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Cerrar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal 3 -->
+      <div
+        class="modal fade"
+        id="modal3"
+        tabindex="-1"
+        aria-labelledby="modal3Label"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal3Label">
+                Manual de Buenas Prácticas Ambientales en la Agricultura
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Cerrar"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <p><strong>Autor:</strong> IDEAM</p>
+              <p>
+                <strong>Fecha de Publicación:</strong> 30 de septiembre de 2022
+              </p>
+              <p>
+                <strong>Resumen:</strong> Esta guía proporciona un conjunto de
+                buenas prácticas ambientales para el sector agrícola, con el
+                objetivo de reducir el impacto ambiental y promover un uso
+                sostenible de los recursos naturales.
+              </p>
+              <p>
+                <strong>Enlace de descarga:</strong>
+                <a href="#" download="Manual_Buenas_Practicas_Agricultura.pdf"
+                  >Descargar PDF</a
+                >
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Cerrar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal 4 -->
+      <div
+        class="modal fade"
+        id="modal4"
+        tabindex="-1"
+        aria-labelledby="modal4Label"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal4Label">
+                Normativa sobre Residuos Peligrosos en Colombia
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Cerrar"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <p>
+                <strong>Autor:</strong> Ministerio de Salud y Protección Social
+              </p>
+              <p>
+                <strong>Fecha de Publicación:</strong> 10 de diciembre de 2021
+              </p>
+              <p>
+                <strong>Resumen:</strong> Este documento describe la normativa
+                vigente en Colombia para la gestión y disposición de residuos
+                peligrosos, incluyendo las obligaciones de los generadores y los
+                estándares de manejo seguro.
+              </p>
+              <p>
+                <strong>Enlace de descarga:</strong>
+                <a href="#" download="Normativa_Residuos_Peligrosos.pdf"
+                  >Descargar PDF</a
+                >
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Cerrar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal 5 -->
+      <div
+        class="modal fade"
+        id="modal5"
+        tabindex="-1"
+        aria-labelledby="modal5Label"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal5Label">
+                Análisis del Cambio Climático en la Región Andina
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Cerrar"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <p><strong>Autor:</strong> Universidad Nacional de Colombia</p>
+              <p><strong>Fecha de Publicación:</strong> 5 de febrero de 2023</p>
+              <p>
+                <strong>Resumen:</strong> Este artículo científico explora los
+                efectos del cambio climático en la región andina de Colombia,
+                analizando las variaciones en patrones climáticos y su impacto
+                en los ecosistemas locales.
+              </p>
+              <p>
+                <strong>Enlace de descarga:</strong>
+                <a href="#" download="Analisis_Cambio_Climatico_Andina.pdf"
+                  >Descargar PDF</a
+                >
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Cerrar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Start -->
+      <div
+        class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn"
+        data-wow-delay="0.1s"
+      >
+        <div class="container py-5">
+          <div class="row g-5">
+            <div class="col-lg-3 col-md-6">
+              <h4
+                class="section-title ff-secondary text-start text-primary fw-normal mb-4"
+              >
+                Nosotros
+              </h4>
+              <a class="btn btn-link" href="about.html">Acerca de</a>
+              <a class="btn btn-link" href="contact.html">Contactanos</a>
+              <a class="btn btn-link" href="">Servicios</a>
+              <a class="btn btn-link" href="">Politica de privacidad</a>
+              <a class="btn btn-link" href="">Terminos y condiciones</a>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <h4
+                class="section-title ff-secondary text-start text-primary fw-normal mb-4"
+              >
+                Contacto
+              </h4>
+              <p class="mb-2">
+                <i class="fa fa-map-marker-alt me-3"></i>Sede principal Bogotá:
+                <br />
+                Calle 12b #04-79
+              </p>
+              <p class="mb-2">
+                <i class="fa fa-phone-alt me-3"></i>+57 318 4313047
+              </p>
+              <p class="mb-2">
+                <i class="fa fa-envelope me-3"></i>info@cunamb.com
+              </p>
+              <div class="d-flex pt-2">
+                <a class="btn btn-outline-light btn-social" href=""
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a class="btn btn-outline-light btn-social" href=""
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a class="btn btn-outline-light btn-social" href=""
+                  ><i class="fab fa-youtube"></i
+                ></a>
+                <a class="btn btn-outline-light btn-social" href=""
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <h4
+                class="section-title ff-secondary text-start text-primary fw-normal mb-4"
+              >
+                Horario atencion
+              </h4>
+              <h5 class="text-light fw-normal">Lunes - Sabado</h5>
+              <p>07AM - 05PM</p>
+              <h5 class="text-light fw-normal">Sabado</h5>
+              <p>10AM - 12AM</p>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <h4
+                class="section-title ff-secondary text-start text-primary fw-normal mb-4"
+              >
+                Noticias
+              </h4>
+              <p>
+                Suscríbete y recibe las últimas novedades ambientales en tu
+                correo.
+              </p>
+              <div class="position-relative mx-auto" style="max-width: 400px">
+                <input
+                  class="form-control border-primary w-100 py-3 ps-4 pe-5"
+                  type="text"
+                  placeholder="Tu correo"
+                />
+                <button
+                  type="button"
+                  class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2"
+                >
+                  Unete
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="copyright">
+            <div class="row">
+              <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                &copy; <a class="border-bottom" href="#">Cunamb</a>, Todos los
+                derechos reservados.
+
+                <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                Diseñado por
+                <a class="border-bottom" href="https://cun.edu.co/"
+                  >Ing. AFHM.</a
+                ><br /><br />
+              </div>
+              <div class="col-md-6 text-center text-md-end">
+                <div class="footer-menu">
+                  <a href="">Inicio</a>
+                  <a href="">Cookies</a>
+                  <a href="">Help</a>
+                  <a href="">FQAs</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Footer End -->
+
+      <!-- Back to Top -->
+      <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"
+        ><i class="bi bi-arrow-up"></i
+      ></a>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const filterOptions = document.querySelectorAll(".filter-option");
+        const documentRows = document.querySelectorAll(".document-row");
+
+        filterOptions.forEach((option) => {
+          option.addEventListener("click", function () {
+            const filter = this.getAttribute("data-filter");
+
+            documentRows.forEach((row) => {
+              const documentType = row.getAttribute("data-type");
+              if (filter === "all" || documentType === filter) {
+                row.style.display = "";
+              } else {
+                row.style.display = "none";
+              }
+            });
+          });
+        });
+      });
+    </script>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,1339 +1,1074 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <meta charset="utf-8" />
-    <title>Cunamb</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta content="" name="keywords" />
-    <meta content="" name="description" />
+    <meta charset="utf-8" />  <!-- Establece la codificación de caracteres a UTF-8 -->
+      <title>Cunamb</title> <!-- Título de la página -->
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" /> <!-- Configura la vista para dispositivos móviles -->
+    <meta content="" name="keywords" /> <!-- Metaetiqueta para palabras clave (vacía) -->
+    <meta content="" name="description" /> <!-- Metaetiqueta para la descripción (vacía) -->
 
     <!-- Favicon -->
-    <link href="img/tierra.png" rel="icon" />
+    <link href="img/tierra.png" rel="icon" /> <!-- Enlace al favicon de la página -->
 
     <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" /> <!-- Preconexión a Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> <!-- Preconexión a Google Fonts con CORS -->
     <link
       href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&display=swap"
       rel="stylesheet"
-    />
+    /> <!-- Enlace a las fuentes de Google Fonts -->
 
     <!-- Icon Font Stylesheet -->
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
       rel="stylesheet"
-    />
+    /> <!-- Enlace a la hoja de estilos de Font Awesome -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
       rel="stylesheet"
-    />
+    /> <!-- Enlace a la hoja de estilos de Bootstrap Icons -->
 
     <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet" />
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="lib/animate/animate.min.css" rel="stylesheet" /> <!-- Enlace a la hoja de estilos de Animate.css -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" /> <!-- Enlace a la hoja de estilos de Owl Carousel -->
     <link
       href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css"
       rel="stylesheet"
-    />
+    /> <!-- Enlace a la hoja de estilos de Tempus Dominus -->
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" /> <!-- Enlace a la hoja de estilos personalizada de Bootstrap -->
 
     <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" /> <!-- Enlace a la hoja de estilos personalizada del sitio -->
 
     <link
       href="/your-path-to-fontawesome/css/fontawesome.css"
       rel="stylesheet"
-    />
-    <link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet" />
-    <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet" />
+    /> <!-- Enlace a la hoja de estilos de Font Awesome (ruta personalizada) -->
+    <link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet" /> <!-- Enlace a la hoja de estilos de marcas de Font Awesome (ruta personalizada) -->
+    <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet" /> <!-- Enlace a la hoja de estilos de sólidos de Font Awesome (ruta personalizada) -->
   </head>
-
-  <body>
-    <div class="container-xxl bg-white p-0">
+<body>
+    <div class="container-xxl bg-white p-0"> <!-- Contenedor principal con fondo blanco y sin padding -->
       <!-- Spinner Start -->
       <div
         id="spinner"
         class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
-      >
+      > <!-- Div para el spinner de carga, centrado en la pantalla -->
         <div
           class="spinner-border text-primary"
           style="width: 3rem; height: 3rem"
           role="status"
-        >
-          <span class="sr-only">Cargando...</span>
+        > <!-- Spinner de carga con estilo y tamaño personalizado -->
+          <span class="sr-only">Cargando...</span> <!-- Texto alternativo para lectores de pantalla -->
         </div>
       </div>
       <!-- Spinner End -->
 
       <!-- Navbar & Hero Start -->
-      <div class="container-xxl position-relative p-0">
+      <div class="container-xxl position-relative p-0"> <!-- Contenedor para la barra de navegación y el encabezado hero -->
         <nav
           class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0"
-        >
+        > <!-- Barra de navegación expandible, oscura, con padding personalizado -->
           <a href="" class="navbar-brand p-0">
-            <h1 class="text-primary m-0"></h1>
-            <img src="img/logo-cun.png" alt="Logo" />
+            <h1 class="text-primary m-0"></h1> <!-- Título de la marca (vacío) -->
+            <img src="img/logo-cun.png" alt="Logo" /> <!-- Logo de la marca -->
           </a>
           <button
             class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarCollapse"
-          >
-            <span class="fa fa-bars"></span>
+          > <!-- Botón para colapsar la barra de navegación en dispositivos pequeños -->
+            <span class="fa fa-bars"></span> <!-- Icono de barras -->
           </button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto py-0 pe-4">
-              <a href="index.html" class="nav-item nav-link active">Inicio</a>
-              <a href="about.html" class="nav-item nav-link">Acerca</a>
-              <a href="#" class="nav-item nav-link">Servicios</a>
-              <!--<a href="#" class="nav-item nav-link">Menu</a> -->
-              <a href="contact.html" class="nav-item nav-link">Contacto</a>
+          <div class="collapse navbar-collapse" id="navbarCollapse"> <!-- Contenedor colapsable de la barra de navegación -->
+            <div class="navbar-nav ms-auto py-0 pe-4"> <!-- Navegación alineada a la derecha -->
+              <a href="index.html" class="nav-item nav-link active">Inicio</a> <!-- Enlace a la página de inicio -->
+              <a href="about.html" class="nav-item nav-link">Acerca</a> <!-- Enlace a la página "Acerca" -->
+              <a href="#" class="nav-item nav-link">Servicios</a> <!-- Enlace a la página de servicios -->
+              <!--<a href="#" class="nav-item nav-link">Menu</a> --> <!-- Enlace comentado -->
+              <a href="contact.html" class="nav-item nav-link">Contacto</a> <!-- Enlace a la página de contacto -->
             </div>
             <a href="doc.html" class="btn btn-primary py-2 px-4"
               >Documentacion</a
-            >
+            > <!-- Botón de enlace a la página de documentación -->
           </div>
         </nav>
 
-        <div class="container-xxl py-5 bg-dark hero-header mb-5">
-          <div class="container my-5 py-5">
-            <div class="row align-items-center g-5">
-              <div class="col-lg-6 text-center text-lg-start">
+        <div class="container-xxl py-5 bg-dark hero-header mb-5"> <!-- Contenedor del encabezado hero con fondo oscuro y margen inferior -->
+          <div class="container my-5 py-5"> <!-- Contenedor con margen y padding -->
+            <div class="row align-items-center g-5"> <!-- Fila con alineación central y espacio entre columnas -->
+              <div class="col-lg-6 text-center text-lg-start"> <!-- Columna con texto centrado en dispositivos pequeños y alineado a la izquierda en dispositivos grandes -->
                 <h1 class="display-3 text-white animated slideInLeft">
                   CUN<br />Ambiental
-                </h1>
+                </h1> <!-- Título principal con animación -->
                 <p class="text-white animated slideInLeft mb-4 pb-2">
+                  <!-- Párrafo con animación y margen inferior -->
+                  <!-- Compromiso por un futuro verde -->
+                <p>
                   Compromiso por un futuro verde <br />
-                  Trabajando juntos para preservar el patrimonio ambiental de
-                  Colombia.
+                  Trabajando juntos para preservar el patrimonio ambiental de Colombia.
                 </p>
+                <!-- Botón para acceder a la documentación -->
                 <a
                   href="doc.html"
                   class="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft"
-                  >Documentacion</a
+                >Documentacion</a
                 >
               </div>
+              <!-- Columna para la imagen -->
               <div class="col-lg-6 text-center text-lg-end overflow-hidden">
                 <img class="img-fluid" src="img/tierra.png" alt="" />
               </div>
             </div>
+        </div>
+      </div>
+    </div>
+    <!-- Navbar & Hero End -->
+
+    <!-- Inicio de la sección de servicios -->
+    <div class="container-xxl py-5">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Servicio: Buscador Avanzado -->
+        <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="service-item rounded pt-3">
+          <div class="p-4">
+            <i class="fa fa-3x fa-search text-primary mb-4"></i>
+            <h5>Buscador Avanzado</h5>
+            <p>
+              Permite a los usuarios buscar documentos por tipo (leyes,
+              decretos, estudios), fecha, institución, tema ambiental,
+              región geográfica, y palabras clave.
+            </p>
           </div>
         </div>
       </div>
-      <!-- Navbar & Hero End -->
+      <!-- Servicio: Comunidad en Línea -->
+      <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+        <div class="service-item rounded pt-3">
+          <div class="p-4">
+            <i class="fa fa-3x fa-users text-primary mb-4"></i>
+            <h5>Comunidad en Línea</h5>
+            <p>
+              Crea un espacio para que los usuarios hagan preguntas,
+              compartan conocimientos y discutan temas relacionados con el
+              medio ambiente.<br />
+              <br />
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Servicio: Servicios Personalizados -->
+      <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+        <div class="service-item rounded pt-3">
+          <div class="p-4">
+            <i class="fa fa-3x fa-cogs text-primary mb-4"></i>
+            <h5>Servicios Personalizados</h5>
+            <p>
+              Permite a los usuarios suscribirse a alertas sobre nuevos
+              documentos o actualizaciones en temas específicos.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Servicio: Valor Agregado -->
+      <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+        <div class="service-item rounded pt-3">
+          <div class="p-4">
+            <i class="fa fa-3x fa-headset text-primary mb-4"></i>
+            <h5>Valor Agregado</h5>
+            <p>
+              Servicios de consultoría para ayudar a organizaciones y
+              personas a encontrar y utilizar la información ambiental de
+              manera efectiva.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Fin de la sección de servicios -->
 
-      <!-- Service Start -->
-      <div class="container-xxl py-5">
-        <div class="container">
+      <!-- Sección Acerca de -->
+<div class="container-xxl py-5">
+  <div class="container">
+    <div class="row g-5 align-items-center">
+      <!-- Columna de imágenes -->
+      <div class="col-lg-6">
+        <div class="row g-3">
+          <!-- Imágenes en cuadrantes -->
+          <div class="col-6 text-start">
+            <img class="img-fluid rounded w-90 wow zoomIn" data-wow-delay="0.1s" src="img/acerca-1.jpg" />
+          </div>
+          <div class="col-6 text-start">
+            <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.3s" src="img/acerca-2.jpg" style="margin-top: 25%" />
+          </div>
+          <div class="col-6 text-end">
+            <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.5s" src="img/acerca-3.jpg" />
+          </div>
+          <div class="col-6 text-end">
+            <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.7s" src="img/acerca-4.jpg" />
+          </div>
+        </div>
+      </div>
+      <!-- Columna de texto sobre la plataforma -->
+      <div class="col-lg-6">
+        <h5 class="section-title ff-secondary text-start text-primary fw-normal">Acerca de</h5>
+        <h1 class="mb-4">Bienvenidos a <i class="fas fa-globe-americas text-primary me-2"></i>Cunamb</h1>
+        <p class="mb-4">
+          Somos una plataforma digital dedicada a facilitar el acceso a la documentación ambiental de Colombia. 
+          Nuestro objetivo es poner a disposición del público, investigadores y tomadores de decisiones, 
+          una amplia base de datos de estudios, leyes, informes y otros recursos relacionados con el medio ambiente.
+        </p>
+        <p class="mb-4">
+          Creemos en la importancia de la información transparente y accesible para promover la conservación 
+          y el desarrollo sostenible de nuestro país.
+        </p>
+        <!-- Estadísticas -->
+        <div class="row g-4 mb-4">
+          <div class="col-sm-6">
+            <div class="d-flex align-items-center border-start border-5 border-primary px-3">
+              <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">32</h1>
+              <div class="ps-4">
+                <p class="mb-0">Departamentos</p>
+                <h6 class="text-uppercase mb-0">de Colombia</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="d-flex align-items-center border-start border-5 border-primary px-3">
+              <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">500</h1>
+              <div class="ps-4">
+                <p class="mb-0">Documentacion</p>
+                <h6 class="text-uppercase mb-0">Ambiental</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="btn btn-primary py-3 px-5 mt-2" href="">Ver mas...</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Fin de la sección Acerca de -->
+
+<!-- Sección de Categorías -->
+<div class="container-xxl py-5">
+  <div class="container">
+    <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+      <h5 class="section-title ff-secondary text-center text-primary fw-normal">Categorias</h5>
+      <h1 class="mb-5">Categorias mas populares</h1>
+    </div>
+    <div class="tab-class text-center wow fadeInUp" data-wow-delay="0.1s">
+      <!-- Navegación de pestañas -->
+      <ul class="nav nav-pills d-inline-flex justify-content-center border-bottom mb-5">
+        <li class="nav-item">
+          <a class="d-flex align-items-center text-start mx-3 ms-0 pb-3 active" data-bs-toggle="pill" href="#tab-1">
+            <i class="fa fa-leaf fa-2x text-primary"></i>
+            <div class="ps-3">
+              <small class="text-body">Documentación</small>
+              <h6 class="mt-n1 mb-0">Biodiversidad y Ecosistemas</h6>
+            </div>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="d-flex align-items-center text-start mx-3 pb-3" data-bs-toggle="pill" href="#tab-2">
+            <i class="fa fa-cloud-moon fa-2x text-primary"></i>
+            <div class="ps-3">
+              <small class="text-body">Documentación</small>
+              <h6 class="mt-n1 mb-0">Cambio Climático y Gestión del Riesgo</h6>
+            </div>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="d-flex align-items-center text-start mx-3 me-0 pb-3" data-bs-toggle="pill" href="#tab-3">
+            <i class="fa fa-recycle fa-2x text-primary"></i>
+            <div class="ps-3">
+              <small class="text-body">Documentación</small>
+              <h6 class="mt-n1 mb-0">Recursos Naturales</h6>
+            </div>
+          </a>
+        </li>
+      </ul>
+      <!-- Contenido de las pestañas -->
+      <div class="tab-content">
+        <div id="tab-1" class="tab-pane fade show p-0 active">
           <div class="row g-4">
-            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-              <div class="service-item rounded pt-3">
-                <div class="p-4">
-                  <i class="fa fa-3x fa-search text-primary mb-4"></i>
-                  <h5>Buscador Avanzado</h5>
-                  <p>
-                    Permite a los usuarios buscar documentos por tipo (leyes,
-                    decretos, estudios), fecha, institución, tema ambiental,
-                    región geográfica, y palabras clave.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
-              <div class="service-item rounded pt-3">
-                <div class="p-4">
-                  <i class="fa fa-3x fa-users text-primary mb-4"></i>
-                  <h5>Comunidad en Línea</h5>
-                  <p>
-                    Crea un espacio para que los usuarios hagan preguntas,
-                    compartan conocimientos y discutan temas relacionados con el
-                    medio ambiente.<br />
-                    <br />
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
-              <div class="service-item rounded pt-3">
-                <div class="p-4">
-                  <i class="fa fa-3x fa-cogs text-primary mb-4"></i>
-                  <h5>Servicios Personalizados</h5>
-                  <p>
-                    Permite a los usuarios suscribirse a alertas sobre nuevos
-                    documentos o actualizaciones en temas específicos.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
-              <div class="service-item rounded pt-3">
-                <div class="p-4">
-                  <i class="fa fa-3x fa-headset text-primary mb-4"></i>
-                  <h5>Valor Agregado</h5>
-                  <p>
-                    Servicios de consultoría para ayudar a organizaciones y
-                    personas a encontrar y utilizar la información ambiental de
-                    manera efectiva.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Service End -->
-
-      <!-- About Start -->
-      <div class="container-xxl py-5">
-        <div class="container">
-          <div class="row g-5 align-items-center">
+            <!-- Elementos de la primera categoría -->
             <div class="col-lg-6">
-              <div class="row g-3">
-                <div class="col-6 text-start">
-                  <img
-                    class="img-fluid rounded w-90 wow zoomIn"
-                    data-wow-delay="0.1s"
-                    src="img/acerca-1.jpg"
-                  />
-                </div>
-                <div class="col-6 text-start">
-                  <img
-                    class="img-fluid rounded w-75 wow zoomIn"
-                    data-wow-delay="0.3s"
-                    src="img/acerca-2.jpg"
-                    style="margin-top: 25%"
-                  />
-                </div>
-                <div class="col-6 text-end">
-                  <img
-                    class="img-fluid rounded w-75 wow zoomIn"
-                    data-wow-delay="0.5s"
-                    src="img/acerca-3.jpg"
-                  />
-                </div>
-                <div class="col-6 text-end">
-                  <img
-                    class="img-fluid rounded w-100 wow zoomIn"
-                    data-wow-delay="0.7s"
-                    src="img/acerca-4.jpg"
-                  />
+              <div class="d-flex align-items-center">
+                <img class="flex-shrink-0 img-fluid rounded" src="img/rec1.jpeg" alt="" style="width: 80px" />
+                <div class="w-100 d-flex flex-column text-start ps-4">
+                  <h5 class="d-flex justify-content-between border-bottom pb-2">
+                    <span>Flora endémica</span>
+                  </h5>
+                  <small class="fst-italic">Orquídeas, bromelias, palma de cera.</small>
                 </div>
               </div>
             </div>
             <div class="col-lg-6">
-              <h5
-                class="section-title ff-secondary text-start text-primary fw-normal"
-              >
-                Acerca de
-              </h5>
-              <h1 class="mb-4">
-                Bienvenidos a
-                <i class="fas fa-globe-americas text-primary me-2"></i>Cunamb
-              </h1>
-              <p class="mb-4">
-                Somos una plataforma digital dedicada a facilitar el acceso a la
-                documentación ambiental de Colombia. Nuestro objetivo es poner a
-                disposición del público, investigadores y tomadores de
-                decisiones, una amplia base de datos de estudios, leyes,
-                informes y otros recursos relacionados con el medio ambiente.
-              </p>
-              <p class="mb-4">
-                Creemos en la importancia de la información transparente y
-                accesible para promover la conservación y el desarrollo
-                sostenible de nuestro país.
-              </p>
-              <div class="row g-4 mb-4">
-                <div class="col-sm-6">
-                  <div
-                    class="d-flex align-items-center border-start border-5 border-primary px-3"
-                  >
-                    <h1
-                      class="flex-shrink-0 display-5 text-primary mb-0"
-                      data-toggle="counter-up"
-                    >
-                      32
-                    </h1>
-                    <div class="ps-4">
-                      <p class="mb-0">Departamentos</p>
-                      <h6 class="text-uppercase mb-0">de Colombia</h6>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                  <div
-                    class="d-flex align-items-center border-start border-5 border-primary px-3"
-                  >
-                    <h1
-                      class="flex-shrink-0 display-5 text-primary mb-0"
-                      data-toggle="counter-up"
-                    >
-                      500
-                    </h1>
-                    <div class="ps-4">
-                      <p class="mb-0">Documentacion</p>
-                      <h6 class="text-uppercase mb-0">Ambiental</h6>
-                    </div>
-                  </div>
+              <div class="d-flex align-items-center">
+                <img class="flex-shrink-0 img-fluid rounded" src="img/rec3.jpg" alt="" style="width: 80px" />
+                <div class="w-100 d-flex flex-column text-start ps-4">
+                  <h5 class="d-flex justify-content-between border-bottom pb-2">
+                    <span>Fauna en peligro</span>
+                  </h5>
+                  <small class="fst-italic">Oso de anteojos, cóndor andino, rana dorada.</small>
                 </div>
               </div>
-              <a class="btn btn-primary py-3 px-5 mt-2" href="">Ver mas...</a>
             </div>
-          </div>
-        </div>
-      </div>
-      <!-- About End -->
-
-      <!-- Menu Start -->
-      <div class="container-xxl py-5">
-        <div class="container">
-          <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-            <h5
-              class="section-title ff-secondary text-center text-primary fw-normal"
-            >
-              Categorias
-            </h5>
-            <h1 class="mb-5">Categorias mas populares</h1>
-          </div>
-          <div class="tab-class text-center wow fadeInUp" data-wow-delay="0.1s">
-            <ul
-              class="nav nav-pills d-inline-flex justify-content-center border-bottom mb-5"
-            >
-              <li class="nav-item">
-                <a
-                  class="d-flex align-items-center text-start mx-3 ms-0 pb-3 active"
-                  data-bs-toggle="pill"
-                  href="#tab-1"
-                >
-                  <i class="fa fa-leaf fa-2x text-primary"></i>
-                  <div class="ps-3">
-                    <small class="text-body">Documentación</small>
-                    <h6 class="mt-n1 mb-0">Biodiversidad y Ecosistemas</h6>
-                  </div>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a
-                  class="d-flex align-items-center text-start mx-3 pb-3"
-                  data-bs-toggle="pill"
-                  href="#tab-2"
-                >
-                  <i class="fa fa-cloud-moon fa-2x text-primary"></i>
-                  <div class="ps-3">
-                    <small class="text-body">Documentación</small>
-                    <h6 class="mt-n1 mb-0">
-                      Cambio Climático y Gestión del Riesgo
-                    </h6>
-                  </div>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a
-                  class="d-flex align-items-center text-start mx-3 me-0 pb-3"
-                  data-bs-toggle="pill"
-                  href="#tab-3"
-                >
-                  <i class="fa fa-recycle fa-2x text-primary"></i>
-                  <div class="ps-3">
-                    <small class="text-body">Documentación</small>
-                    <h6 class="mt-n1 mb-0">Recursos Naturales</h6>
-                  </div>
-                </a>
-              </li>
-            </ul>
-            <div class="tab-content">
-              <div id="tab-1" class="tab-pane fade show p-0 active">
-                <div class="row g-4">
-                  <div class="col-lg-6">
-                    <div class="d-flex align-items-center">
-                      <img
-                        class="flex-shrink-0 img-fluid rounded"
-                        src="img/rec1.jpeg"
-                        alt=""
-                        style="width: 80px"
-                      />
-                      <div class="w-100 d-flex flex-column text-start ps-4">
-                        <h5
-                          class="d-flex justify-content-between border-bottom pb-2"
-                        >
-                          <span>Flora endémica</span>
-                        </h5>
-                        <small class="fst-italic"
-                          >Orquídeas, bromelias, palma de cera.</small
-                        >
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-6">
-                    <div class="d-flex align-items-center">
-                      <img
-                        class="flex-shrink-0 img-fluid rounded"
-                        src="img/rec3.jpg"
-                        alt=""
-                        style="width: 80px"
-                      />
-                      <div class="w-100 d-flex flex-column text-start ps-4">
-                        <h5
-                          class="d-flex justify-content-between border-bottom pb-2"
-                        >
-                          <span>Fauna en peligro</span>
-                        </h5>
-                        <small class="fst-italic"
-                          >Oso de anteojos, cóndor andino, rana dorada.</small
-                        >
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-6">
-                    <div class="d-flex align-items-center">
-                      <img
-                        class="flex-shrink-0 img-fluid rounded"
-                        src="img/rec2.jpeg"
-                        alt=""
-                        style="width: 80px"
-                      />
-                      <div class="w-100 d-flex flex-column text-start ps-4">
-                        <h5
-                          class="d-flex justify-content-between border-bottom pb-2"
-                        >
-                          <span>Corredores biológicos</span>
-                        </h5>
-                        <small class="fst-italic"
-                          >Conectividad entre ecosistemas, importancia para la
-                          conservación.</small
-                        >
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-6">
-                    <div class="d-flex align-items-center">
-                      <img
-                        class="flex-shrink-0 img-fluid rounded"
-                        src="img/rec4.jpeg"
-                        alt=""
-                        style="width: 80px"
-                      />
-                      <div class="w-100 d-flex flex-column text-start ps-4">
-                        <h5
-                          class="d-flex justify-content-between border-bottom pb-2"
-                        >
-                          <span>Servicios ecosistémicos</span>
-                        </h5>
-                        <small class="fst-italic"
-                          >Polinización, regulación hídrica, captura de
-                          carbono.</small
-                        >
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-6">
-                    <div class="d-flex align-items-center">
-                      <img
-                        class="flex-shrink-0 img-fluid rounded"
-                        src="img/rec5.jpg"
-                        alt=""
-                        style="width: 80px"
-                      />
-                      <div class="w-100 d-flex flex-column text-start ps-4">
-                        <h5
-                          class="d-flex justify-content-between border-bottom pb-2"
-                        >
-                          <span>Áreas marinas protegidas</span>
-                        </h5>
-                        <small class="fst-italic"
-                          >Arrecifes de coral, manglares, zonas costeras.</small
-                        >
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-6">
-                    <div class="d-flex align-items-center">
-                      <img
-                        class="flex-shrink-0 img-fluid rounded"
-                        src="img/rec6.jpeg"
-                        alt=""
-                        style="width: 80px"
-                      />
-                      <div class="w-100 d-flex flex-column text-start ps-4">
-                        <h5
-                          class="d-flex justify-content-between border-bottom pb-2"
-                        >
-                          <span>Biodiversidad urbana</span>
-                        </h5>
-                        <small class="fst-italic"
-                          >Fauna y flora en ciudades, jardines botánicos.</small
-                        >
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-6">
-                    <div class="d-flex align-items-center">
-                      <img
-                        class="flex-shrink-0 img-fluid rounded"
-                        src="img/rec7.jpeg"
-                        alt=""
-                        style="width: 80px"
-                      />
-                      <div class="w-100 d-flex flex-column text-start ps-4">
-                        <h5
-                          class="d-flex justify-content-between border-bottom pb-2"
-                        >
-                          <span>Bioprospección</span>
-                        </h5>
-                        <small class="fst-italic"
-                          >Uso sostenible de la biodiversidad,
-                          biotecnología.</small
-                        >
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-6">
-                    <div class="d-flex align-items-center">
-                      <img
-                        class="flex-shrink-0 img-fluid rounded"
-                        src="img/rec8.jpeg"
-                        alt=""
-                        style="width: 80px"
-                      />
-                      <div class="w-100 d-flex flex-column text-start ps-4">
-                        <h5
-                          class="d-flex justify-content-between border-bottom pb-2"
-                        >
-                          <span
-                            >Impactos del cambio climático en la
-                            biodiversidad</span
-                          >
-                        </h5>
-                        <small class="fst-italic"
-                          >Blanqueamiento de corales, migración de
-                          especies.</small
-                        >
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div id="tab-2" class="tab-pane fade show p-0">
-                <div class="row g-4">
-                  <div class="col-lg-6">
-                    <div class="d-flex align-items-center">
-                      <img
-                        class="flex-shrink-0 img-fluid rounded"
-                        src="img/rec9.png"
-                        alt=""
-                        style="width: 80px"
-                      />
-                      <div class="w-100 d-flex flex-column text-start ps-4">
-                        <h5
-                          class="d-flex justify-content-between border-bottom pb-2"
-                        >
-                          <span>Eventos extremos históricos</span>
-                        </h5>
-                        <small class="fst-italic"
-                          >El Niño, La Niña, huracanes.</small
-                        >
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-6">
-                    <div class="d-flex align-items-center">
-                      <img
-                        class="flex-shrink-0 img-fluid rounded"
-                        src="img/rec9.png"
-                        alt=""
-                        style="width: 80px"
-                      />
-                      <div class="w-100 d-flex flex-column text-start ps-4">
-                        <h5
-                          class="d-flex justify-content-between border-bottom pb-2"
-                        >
-                          <span>Vulnerabilidad de los ecosistemas</span>
-                        </h5>
-                        <small class="fst-italic"
-                          >Páramos, glaciares, zonas costeras.</small
-                        >
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-6">
-                    <div class="d-flex align-items-center">
-                      <img
-                        class="flex-shrink-0 img-fluid rounded"
-                        src="img/rec9.png"
-                        alt=""
-                        style="width: 80px"
-                      />
-                      <div class="w-100 d-flex flex-column text-start ps-4">
-                        <h5
-                          class="d-flex justify-content-between border-bottom pb-2"
-                        >
-                          <span>Adaptación basada en ecosistemas</span>
-                        </h5>
-                        <small class="fst-italic"
-                          >Restauración de manglares, reforestación.</small
-                        >
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-6">
-                    <div class="d-flex align-items-center">
-                      <img
-                        class="flex-shrink-0 img-fluid rounded"
-                        src="img/rec9.png"
-                        alt=""
-                        style="width: 80px"
-                      />
-                      <div class="w-100 d-flex flex-column text-start ps-4">
-                        <h5
-                          class="d-flex justify-content-between border-bottom pb-2"
-                        >
-                          <span>Energías renovables</span>
-                        </h5>
-                        <small class="fst-italic"
-                          >Solar, eólica, hidroeléctrica.</small
-                        >
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-6">
-                    <div class="d-flex align-items-center">
-                      <img
-                        class="flex-shrink-0 img-fluid rounded"
-                        src="img/rec9.png"
-                        alt=""
-                        style="width: 80px"
-                      />
-                      <div class="w-100 d-flex flex-column text-start ps-4">
-                        <h5
-                          class="d-flex justify-content-between border-bottom pb-2"
-                        >
-                          <span>Economía circula</span>
-                        </h5>
-                        <small class="fst-italic"
-                          >Reducción, reutilización y reciclaje.</small
-                        >
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-6">
-                    <div class="d-flex align-items-center">
-                      <img
-                        class="flex-shrink-0 img-fluid rounded"
-                        src="img/rec9.png"
-                        alt=""
-                        style="width: 80px"
-                      />
-                      <div class="w-100 d-flex flex-column text-start ps-4">
-                        <h5
-                          class="d-flex justify-content-between border-bottom pb-2"
-                        >
-                          <span>Huella de carbono</span>
-                        </h5>
-                        <small class="fst-italic"
-                          >Cálculo y reducción de emisiones.</small
-                        >
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-6">
-                    <div class="d-flex align-items-center">
-                      <img
-                        class="flex-shrink-0 img-fluid rounded"
-                        src="img/rec9.png"
-                        alt=""
-                        style="width: 80px"
-                      />
-                      <div class="w-100 d-flex flex-column text-start ps-4">
-                        <h5
-                          class="d-flex justify-content-between border-bottom pb-2"
-                        >
-                          <span>Acuerdos internacionales</span>
-                        </h5>
-                        <small class="fst-italic"
-                          >Protocolo de Kyoto, Acuerdo de París.</small
-                        >
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-6">
-                    <div class="d-flex align-items-center">
-                      <img
-                        class="flex-shrink-0 img-fluid rounded"
-                        src="img/rec9.png"
-                        alt=""
-                        style="width: 80px"
-                      />
-                      <div class="w-100 d-flex flex-column text-start ps-4">
-                        <h5
-                          class="d-flex justify-content-between border-bottom pb-2"
-                        >
-                          <span
-                            >Desastres naturales y gestión de emergencias</span
-                          >
-                        </h5>
-                        <small class="fst-italic"
-                          >Planes de contingencia, sistemas de alerta
-                          temprana.</small
-                        >
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div id="tab-3" class="tab-pane fade show p-0">
-                <div class="row g-4">
-                  <div class="col-lg-6">
-                    <div class="d-flex align-items-center">
-                      <img
-                        class="flex-shrink-0 img-fluid rounded"
-                        src="img/rec9.png"
-                        alt=""
-                        style="width: 80px"
-                      />
-                      <div class="w-100 d-flex flex-column text-start ps-4">
-                        <h5
-                          class="d-flex justify-content-between border-bottom pb-2"
-                        >
-                          <span>Calidad del agua</span>
-                        </h5>
-                        <small class="fst-italic"
-                          >Contaminación por metales pesados,
-                          eutrofización.</small
-                        >
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-6">
-                    <div class="d-flex align-items-center">
-                      <img
-                        class="flex-shrink-0 img-fluid rounded"
-                        src="img/rec9.png"
-                        alt=""
-                        style="width: 80px"
-                      />
-                      <div class="w-100 d-flex flex-column text-start ps-4">
-                        <h5
-                          class="d-flex justify-content-between border-bottom pb-2"
-                        >
-                          <span>Gestión de residuos sólidos</span>
-                        </h5>
-                        <small class="fst-italic">
-                          Rellenos sanitarios, manejo de residuos
-                          peligrosos.</small
-                        >
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-6">
-                    <div class="d-flex align-items-center">
-                      <img
-                        class="flex-shrink-0 img-fluid rounded"
-                        src="img/rec9.png"
-                        alt=""
-                        style="width: 80px"
-                      />
-                      <div class="w-100 d-flex flex-column text-start ps-4">
-                        <h5
-                          class="d-flex justify-content-between border-bottom pb-2"
-                        >
-                          <span>Explotación minera</span>
-                        </h5>
-                        <small class="fst-italic"
-                          >Impactos socioambientales, minería ilegal.</small
-                        >
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-6">
-                    <div class="d-flex align-items-center">
-                      <img
-                        class="flex-shrink-0 img-fluid rounded"
-                        src="img/rec9.png"
-                        alt=""
-                        style="width: 80px"
-                      />
-                      <div class="w-100 d-flex flex-column text-start ps-4">
-                        <h5
-                          class="d-flex justify-content-between border-bottom pb-2"
-                        >
-                          <span>Agricultura sostenible</span>
-                        </h5>
-                        <small class="fst-italic"
-                          >Agroecología, agricultura de conservación.</small
-                        >
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-6">
-                    <div class="d-flex align-items-center">
-                      <img
-                        class="flex-shrink-0 img-fluid rounded"
-                        src="img/rec9.png"
-                        alt=""
-                        style="width: 80px"
-                      />
-                      <div class="w-100 d-flex flex-column text-start ps-4">
-                        <h5
-                          class="d-flex justify-content-between border-bottom pb-2"
-                        >
-                          <span>Pesca y acuicultura</span>
-                        </h5>
-                        <small class="fst-italic"
-                          >Sobrepesca, acuicultura responsable.</small
-                        >
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-6">
-                    <div class="d-flex align-items-center">
-                      <img
-                        class="flex-shrink-0 img-fluid rounded"
-                        src="img/rec9.png"
-                        alt=""
-                        style="width: 80px"
-                      />
-                      <div class="w-100 d-flex flex-column text-start ps-4">
-                        <h5
-                          class="d-flex justify-content-between border-bottom pb-2"
-                        >
-                          <span>Ordenamiento territorial ambiental</span>
-                        </h5>
-                        <small class="fst-italic"
-                          >Planes de manejo ambiental, zonificación ecológica
-                          económica.</small
-                        >
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-6">
-                    <div class="d-flex align-items-center">
-                      <img
-                        class="flex-shrink-0 img-fluid rounded"
-                        src="img/rec9.png"
-                        alt=""
-                        style="width: 80px"
-                      />
-                      <div class="w-100 d-flex flex-column text-start ps-4">
-                        <h5
-                          class="d-flex justify-content-between border-bottom pb-2"
-                        >
-                          <span>Instrumentos económicos ambientales</span>
-                        </h5>
-                        <small class="fst-italic"
-                          >Pagos por servicios ambientales, tasas
-                          retributivas.</small
-                        >
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-6">
-                    <div class="d-flex align-items-center">
-                      <img
-                        class="flex-shrink-0 img-fluid rounded"
-                        src="img/rec9.png"
-                        alt=""
-                        style="width: 80px"
-                      />
-                      <div class="w-100 d-flex flex-column text-start ps-4">
-                        <h5
-                          class="d-flex justify-content-between border-bottom pb-2"
-                        >
-                          <span
-                            >Participación ciudadana en la gestión
-                            ambiental</span
-                          >
-                        </h5>
-                        <small class="fst-italic"
-                          >Consejos comunitarios, veedurías ciudadanas.</small
-                        >
-                      </div>
-                    </div>
-                  </div>
+            <div class="col-lg-6">
+              <div class="d-flex align-items-center">
+                <img class="flex-shrink-0 img-fluid rounded" src="img/rec2.jpeg" alt="" style="width: 80px" />
+                <div class="w-100 d-flex flex-column text-start ps-4">
+                  <h5 class="d-flex justify-content-between border-bottom pb-2">
+                    <span>Corredores biológicos</span>
+                  </h5>
+                  <small class="fst-italic">Conectividad entre ecosistemas, importancia para la conservación.</small>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        <!-- Otras pestañas podrían agregarse aquí -->
       </div>
-      <!-- Menu End -->
+    </div>
+  </div>
+</div>
+<!-- Fin de la sección de Categorías -->                    
+    </div>
+                  </div>
+                  <div class="col-lg-6">
+  <div class="d-flex align-items-center">
+    <img
+      class="flex-shrink-0 img-fluid rounded"
+      src="img/rec4.jpeg"
+      alt=""
+      style="width: 80px"
+    />
+    <div class="w-100 d-flex flex-column text-start ps-4">
+      <h5 class="d-flex justify-content-between border-bottom pb-2">
+        <span>Servicios ecosistémicos</span>
+      </h5>
+      <small class="fst-italic">Polinización, regulación hídrica, captura de carbono.</small>
+    </div>
+  </div>
+</div>
+<!-- Sección para "Servicios ecosistémicos" -->
+<div class="col-lg-6">
+  <div class="d-flex align-items-center">
+    <img
+      class="flex-shrink-0 img-fluid rounded"
+      src="img/rec5.jpg"
+      alt=""
+      style="width: 80px"
+    />
+    <div class="w-100 d-flex flex-column text-start ps-4">
+      <h5 class="d-flex justify-content-between border-bottom pb-2">
+        <span>Áreas marinas protegidas</span>
+      </h5>
+      <small class="fst-italic">Arrecifes de coral, manglares, zonas costeras.</small>
+    </div>
+  </div>
+</div>
+<!-- Sección para "Áreas marinas protegidas" -->
+<div class="col-lg-6">
+  <div class="d-flex align-items-center">
+    <img
+      class="flex-shrink-0 img-fluid rounded"
+      src="img/rec6.jpeg"
+      alt=""
+      style="width: 80px"
+    />
+    <div class="w-100 d-flex flex-column text-start ps-4">
+      <h5 class="d-flex justify-content-between border-bottom pb-2">
+        <span>Biodiversidad urbana</span>
+      </h5>
+      <small class="fst-italic">Fauna y flora en ciudades, jardines botánicos.</small>
+    </div>
+  </div>
+</div>
+<!-- Sección para "Biodiversidad urbana" -->
+<div class="col-lg-6">
+  <div class="d-flex align-items-center">
+    <img
+      class="flex-shrink-0 img-fluid rounded"
+      src="img/rec7.jpeg"
+      alt=""
+      style="width: 80px"
+    />
+    <div class="w-100 d-flex flex-column text-start ps-4">
+      <h5 class="d-flex justify-content-between border-bottom pb-2">
+        <span>Bioprospección</span>
+      </h5>
+      <small class="fst-italic">Uso sostenible de la biodiversidad, biotecnología.</small>
+    </div>
+  </div>
+</div>
+<!-- Sección para "Bioprospección" -->
+<div class="col-lg-6">
+  <div class="d-flex align-items-center">
+    <img
+      class="flex-shrink-0 img-fluid rounded"
+      src="img/rec8.jpeg"
+      alt=""
+      style="width: 80px"
+    />
+    <div class="w-100 d-flex flex-column text-start ps-4">
+      <h5 class="d-flex justify-content-between border-bottom pb-2">
+        <span>Impactos del cambio climático en la biodiversidad</span>
+      </h5>
+      <small class="fst-italic">Blanqueamiento de corales, migración de especies.</small>
+    </div>
+  </div>
+</div>
+<!-- Sección para "Impactos del cambio climático en la biodiversidad" -->
 
-      <!-- Reservation Start -->
-      <div class="container-xxl py-5 px-0 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="row g-0">
-          <div class="col-md-6">
-            <div class="video">
-              <button
-                type="button"
-                class="btn-play"
-                data-bs-toggle="modal"
-                data-src="https://youtu.be/epog4f3ZT3o"
-                data-bs-target="#videoModal"
-              >
-                <span></span>
+<div id="tab-2" class="tab-pane fade show p-0">
+  <div class="row g-4">
+    <div class="col-lg-6">
+      <div class="d-flex align-items-center">
+        <img
+          class="flex-shrink-0 img-fluid rounded"
+          src="img/rec9.png"
+          alt=""
+          style="width: 80px"
+        />
+        <div class="w-100 d-flex flex-column text-start ps-4">
+          <h5 class="d-flex justify-content-between border-bottom pb-2">
+            <span>Eventos extremos históricos</span>
+          </h5>
+          <small class="fst-italic">El Niño, La Niña, huracanes.</small>
+        </div>
+      </div>
+    </div>
+    <!-- Sección para "Eventos extremos históricos" -->
+    <div class="col-lg-6">
+      <div class="d-flex align-items-center">
+        <img
+          class="flex-shrink-0 img-fluid rounded"
+          src="img/rec9.png"
+          alt=""
+          style="width: 80px"
+        />
+        <div class="w-100 d-flex flex-column text-start ps-4">
+          <h5 class="d-flex justify-content-between border-bottom pb-2">
+            <span>Vulnerabilidad de los ecosistemas</span>
+          </h5>
+          <small class="fst-italic">Páramos, glaciares, zonas costeras.</small>
+        </div>
+      </div>
+    </div>
+    <!-- Sección para "Vulnerabilidad de los ecosistemas" -->
+    <div class="col-lg-6">
+      <div class="d-flex align-items-center">
+        <img
+          class="flex-shrink-0 img-fluid rounded"
+          src="img/rec9.png"
+          alt=""
+          style="width: 80px"
+        />
+        <div class="w-100 d-flex flex-column text-start ps-4">
+          <h5 class="d-flex justify-content-between border-bottom pb-2">
+            <span>Adaptación basada en ecosistemas</span>
+          </h5>
+          <small class="fst-italic">Restauración de manglares, reforestación.</small>
+        </div>
+      </div>
+    </div>
+    <!-- Sección para "Adaptación basada en ecosistemas" -->
+    <div class="col-lg-6">
+      <div class="d-flex align-items-center">
+        <img
+          class="flex-shrink-0 img-fluid rounded"
+          src="img/rec9.png"
+          alt=""
+          style="width: 80px"
+        />
+        <div class="w-100 d-flex flex-column text-start ps-4">
+          <h5 class="d-flex justify-content-between border-bottom pb-2">
+            <span>Energías renovables</span>
+          </h5>
+          <small class="fst-italic">Solar, eólica, hidroeléctrica.</small>
+        </div>
+      </div>
+    </div>
+    <!-- Sección para "Energías renovables" -->
+                 <div class="col-lg-6">
+  <div class="d-flex align-items-center">
+    <img
+      class="flex-shrink-0 img-fluid rounded"
+      src="img/rec9.png"
+      alt=""
+      style="width: 80px"
+    />
+    <div class="w-100 d-flex flex-column text-start ps-4">
+      <h5 class="d-flex justify-content-between border-bottom pb-2">
+        <span>Economía circular</span>
+      </h5>
+      <small class="fst-italic">Reducción, reutilización y reciclaje.</small>
+    </div>
+  </div>
+</div>
+<!-- Sección para "Economía circular" -->
+<div class="col-lg-6">
+  <div class="d-flex align-items-center">
+    <img
+      class="flex-shrink-0 img-fluid rounded"
+      src="img/rec9.png"
+      alt=""
+      style="width: 80px"
+    />
+    <div class="w-100 d-flex flex-column text-start ps-4">
+      <h5 class="d-flex justify-content-between border-bottom pb-2">
+        <span>Huella de carbono</span>
+      </h5>
+      <small class="fst-italic">Cálculo y reducción de emisiones.</small>
+    </div>
+  </div>
+</div>
+<!-- Sección para "Huella de carbono" -->
+<div class="col-lg-6">
+  <div class="d-flex align-items-center">
+    <img
+      class="flex-shrink-0 img-fluid rounded"
+      src="img/rec9.png"
+      alt=""
+      style="width: 80px"
+    />
+    <div class="w-100 d-flex flex-column text-start ps-4">
+      <h5 class="d-flex justify-content-between border-bottom pb-2">
+        <span>Acuerdos internacionales</span>
+      </h5>
+      <small class="fst-italic">Protocolo de Kyoto, Acuerdo de París.</small>
+    </div>
+  </div>
+</div>
+<!-- Sección para "Acuerdos internacionales" -->
+<div class="col-lg-6">
+  <div class="d-flex align-items-center">
+    <img
+      class="flex-shrink-0 img-fluid rounded"
+      src="img/rec9.png"
+      alt=""
+      style="width: 80px"
+    />
+    <div class="w-100 d-flex flex-column text-start ps-4">
+      <h5 class="d-flex justify-content-between border-bottom pb-2">
+        <span>Desastres naturales y gestión de emergencias</span>
+      </h5>
+      <small class="fst-italic">Planes de contingencia, sistemas de alerta temprana.</small>
+    </div>
+  </div>
+</div>
+<!-- Sección para "Desastres naturales y gestión de emergencias" -->
+
+<div id="tab-3" class="tab-pane fade show p-0">
+  <div class="row g-4">
+    <div class="col-lg-6">
+      <div class="d-flex align-items-center">
+        <img
+          class="flex-shrink-0 img-fluid rounded"
+          src="img/rec9.png"
+          alt=""
+          style="width: 80px"
+        />
+        <div class="w-100 d-flex flex-column text-start ps-4">
+          <h5 class="d-flex justify-content-between border-bottom pb-2">
+            <span>Calidad del agua</span>
+          </h5>
+          <small class="fst-italic">Contaminación por metales pesados, eutrofización.</small>
+        </div>
+      </div>
+    </div>
+    <!-- Sección para "Calidad del agua" -->
+    <div class="col-lg-6">
+      <div class="d-flex align-items-center">
+        <img
+          class="flex-shrink-0 img-fluid rounded"
+          src="img/rec9.png"
+          alt=""
+          style="width: 80px"
+        />
+        <div class="w-100 d-flex flex-column text-start ps-4">
+          <h5 class="d-flex justify-content-between border-bottom pb-2">
+            <span>Gestión de residuos sólidos</span>
+          </h5>
+          <small class="fst-italic">Rellenos sanitarios, manejo de residuos peligrosos.</small>
+        </div>
+      </div>
+    </div>
+    <!-- Sección para "Gestión de residuos sólidos" -->
+    <div class="col-lg-6">
+      <div class="d-flex align-items-center">
+        <img
+          class="flex-shrink-0 img-fluid rounded"
+          src="img/rec9.png"
+          alt=""
+          style="width: 80px"
+        />
+        <div class="w-100 d-flex flex-column text-start ps-4">
+          <h5 class="d-flex justify-content-between border-bottom pb-2">
+            <span>Explotación minera</span>
+          </h5>
+          <small class="fst-italic">Impactos socioambientales, minería ilegal.</small>
+        </div>
+      </div>
+    </div>
+    <!-- Sección para "Explotación minera" -->
+    <div class="col-lg-6">
+      <div class="d-flex align-items-center">
+        <img
+          class="flex-shrink-0 img-fluid rounded"
+          src="img/rec9.png"
+          alt=""
+          style="width: 80px"
+        />
+        <div class="w-100 d-flex flex-column text-start ps-4">
+          <h5 class="d-flex justify-content-between border-bottom pb-2">
+            <span>Agricultura sostenible</span>
+          </h5>
+          <small class="fst-italic">Agroecología, agricultura de conservación.</small>
+        </div>
+      </div>
+    </div>
+    <!-- Sección para "Agricultura sostenible" -->
+    <div class="col-lg-6">
+      <div class="d-flex align-items-center">
+        <img
+          class="flex-shrink-0 img-fluid rounded"
+          src="img/rec9.png"
+          alt=""
+          style="width: 80px"
+        />
+        <div class="w-100 d-flex flex-column text-start ps-4">
+          <h5 class="d-flex justify-content-between border-bottom pb-2">
+            <span>Pesca y acuicultura</span>
+          </h5>
+          <small class="fst-italic">Sobrepesca, acuicultura responsable.</small>
+        </div>
+      </div>
+    </div>
+    <!-- Sección para "Pesca y acuicultura" -->
+    <div class="col-lg-6">
+      <div class="d-flex align-items-center">
+        <img
+          class="flex-shrink-0 img-fluid rounded"
+          src="img/rec9.png"
+          alt=""
+          style="width: 80px"
+        />
+        <div class="w-100 d-flex flex-column text-start ps-4">
+          <h5 class="d-flex justify-content-between border-bottom pb-2">
+            <span>Ordenamiento territorial ambiental</span>
+          </h5>
+          <small class="fst-italic">Planes de manejo ambiental, zonificación ecológica económica.</small>
+        </div>
+      </div>
+    </div>
+    <!-- Sección para "Ordenamiento territorial ambiental" -->
+    <div class="col-lg-6">
+      <div class="d-flex align-items-center">
+        <img
+          class="flex-shrink-0 img-fluid rounded"
+          src="img/rec9.png"
+          alt=""
+          style="width: 80px"
+        />
+        <div class="w-100 d-flex flex-column text-start ps-4">
+          <h5 class="d-flex justify-content-between border-bottom pb-2">
+            <span>Instrumentos económicos ambientales</span>
+          </h5>
+          <small class="fst-italic">Pagos por servicios ambientales, tasas retributivas.</small>
+        </div>
+      </div>
+    </div>
+    <!-- Sección para "Instrumentos económicos ambientales" -->
+    <div class="col-lg-6">
+      <div class="d-flex align-items-center">
+        <img
+          class="flex-shrink-0 img-fluid rounded"
+          src="img/rec9.png"
+          alt=""
+          style="width: 80px"
+        />
+        <div class="w-100 d-flex flex-column text-start ps-4">
+          <h5 class="d-flex justify-content-between border-bottom pb-2">
+            <span>Participación ciudadana en la gestión ambiental</span>
+          </h5>
+          <small class="fst-italic">Consejos comunitarios, veedurías ciudadanas.</small>
+        </div>
+      </div>
+    </div>
+    <!-- Sección para "Participación ciudadana en la gestión ambiental" -->
+  </div>
+</div>                  
+<!-- Final de la sección de menú -->
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Fin del menú -->
+
+<!-- Inicio de la sección de reservas -->
+<div class="container-xxl py-5 px-0 wow fadeInUp" data-wow-delay="0.1s">
+  <div class="row g-0">
+    <div class="col-md-6">
+      <div class="video">
+        <button
+          type="button"
+          class="btn-play"
+          data-bs-toggle="modal"
+          data-src="https://youtu.be/epog4f3ZT3o"
+          data-bs-target="#videoModal"
+        >
+          <span></span>
+        </button>
+      </div>
+    </div>
+    <div class="col-md-6 bg-dark d-flex align-items-center">
+      <div class="p-5 wow fadeInUp" data-wow-delay="0.2s">
+        <h5 class="section-title ff-secondary text-start text-primary fw-normal">
+          Contáctanos
+        </h5>
+        <h1 class="text-white mb-4">Danos tu aporte</h1>
+        <form>
+          <div class="row g-3">
+            <div class="col-md-6">
+              <div class="form-floating">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="Your Name"
+                />
+                <label for="name">Nombre</label>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-floating">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Your Email"
+                />
+                <label for="email">Correo</label>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-floating date" id="date3" data-target-input="nearest">
+                <input
+                  type="text"
+                  class="form-control datetimepicker-input"
+                  id="datetime"
+                  placeholder="Date & Time"
+                  data-target="#date3"
+                  data-toggle="datetimepicker"
+                />
+                <label for="datetime">Fecha</label>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-floating">
+                <select class="form-select" id="select1">
+                  <option value="1">Felicitaciones</option>
+                  <option value="2">Correcciones</option>
+                  <option value="3">Aportes</option>
+                </select>
+                <label for="select1">Tipo consulta</label>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="form-floating">
+                <textarea
+                  class="form-control"
+                  placeholder="Special Request"
+                  id="message"
+                  style="height: 100px"
+                ></textarea>
+                <label for="message">Tu mensaje</label>
+              </div>
+            </div>
+            <div class="col-12">
+              <button class="btn btn-primary w-100 py-3" type="submit">
+                Enviar
               </button>
             </div>
           </div>
-          <div class="col-md-6 bg-dark d-flex align-items-center">
-            <div class="p-5 wow fadeInUp" data-wow-delay="0.2s">
-              <h5
-                class="section-title ff-secondary text-start text-primary fw-normal"
-              >
-                Contactanos
-              </h5>
-              <h1 class="text-white mb-4">Danos tu aporte</h1>
-              <form>
-                <div class="row g-3">
-                  <div class="col-md-6">
-                    <div class="form-floating">
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="name"
-                        placeholder="Your Name"
-                      />
-                      <label for="name">Nombre</label>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="form-floating">
-                      <input
-                        type="email"
-                        class="form-control"
-                        id="email"
-                        placeholder="Your Email"
-                      />
-                      <label for="email">Correo</label>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div
-                      class="form-floating date"
-                      id="date3"
-                      data-target-input="nearest"
-                    >
-                      <input
-                        type="text"
-                        class="form-control datetimepicker-input"
-                        id="datetime"
-                        placeholder="Date & Time"
-                        data-target="#date3"
-                        data-toggle="datetimepicker"
-                      />
-                      <label for="datetime">Fecha</label>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="form-floating">
-                      <select class="form-select" id="select1">
-                        <option value="1">Felicitaciones</option>
-                        <option value="2">Correcciones</option>
-                        <option value="3">Aportes</option>
-                      </select>
-                      <label for="select1">Tipo consulta</label>
-                    </div>
-                  </div>
-                  <div class="col-12">
-                    <div class="form-floating">
-                      <textarea
-                        class="form-control"
-                        placeholder="Special Request"
-                        id="message"
-                        style="height: 100px"
-                      ></textarea>
-                      <label for="message">Tu mensaje</label>
-                    </div>
-                  </div>
-                  <div class="col-12">
-                    <button class="btn btn-primary w-100 py-3" type="submit">
-                      Enviar
-                    </button>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
+        </form>
       </div>
-
-      <div
-        class="modal fade"
-        id="videoModal"
-        tabindex="-1"
-        aria-labelledby="exampleModalLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog">
-          <div class="modal-content rounded-0">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Youtube Video</h5>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="modal-body">
-              <!-- 16:9 aspect ratio -->
-              <div class="ratio ratio-16x9">
-                <iframe
-                  class="embed-responsive-item"
-                  src=""
-                  id="video"
-                  allowfullscreen
-                  allowscriptaccess="always"
-                  allow="autoplay"
-                ></iframe>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Reservation Start -->
-
-      <!-- Team Start -->
-      <div class="container-xxl pt-5 pb-3">
-        <div class="container">
-          <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-            <h5
-              class="section-title ff-secondary text-center text-primary fw-normal"
-            >
-              Nuestro equipo
-            </h5>
-            <h1 class="mb-5">Nuestros ingenieros</h1>
-          </div>
-          <div class="row g-4">
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-              <div class="team-item text-center rounded overflow-hidden">
-                <div class="rounded-circle overflow-hidden m-4">
-                  <img class="img-fluid" src="img/team1.png" alt="" />
-                </div>
-                <h5 class="mb-0">Raul Bareño</h5>
-                <small>Ingeniero de sistemas</small>
-                <div class="d-flex justify-content-center mt-3">
-                  <a class="btn btn-square btn-primary mx-1" href=""
-                    ><i class="fab fa-facebook-f"></i
-                  ></a>
-                  <a class="btn btn-square btn-primary mx-1" href=""
-                    ><i class="fab fa-twitter"></i
-                  ></a>
-                  <a class="btn btn-square btn-primary mx-1" href=""
-                    ><i class="fab fa-instagram"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-              <div class="team-item text-center rounded overflow-hidden">
-                <div class="rounded-circle overflow-hidden m-4">
-                  <img class="img-fluid" src="img/team2.jpg" alt="" />
-                </div>
-                <h5 class="mb-0">Andres F Hurtado</h5>
-                <small>Ingeniero desarrollo</small>
-                <div class="d-flex justify-content-center mt-3">
-                  <a class="btn btn-square btn-primary mx-1" href=""
-                    ><i class="fab fa-facebook-f"></i
-                  ></a>
-                  <a class="btn btn-square btn-primary mx-1" href=""
-                    ><i class="fab fa-twitter"></i
-                  ></a>
-                  <a class="btn btn-square btn-primary mx-1" href=""
-                    ><i class="fab fa-instagram"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-              <div class="team-item text-center rounded overflow-hidden">
-                <div class="rounded-circle overflow-hidden m-4">
-                  <img class="img-fluid" src="img/team3.png" alt="" />
-                </div>
-                <h5 class="mb-0">Andrea Conrado</h5>
-                <small>Ingeniera diseño</small>
-                <div class="d-flex justify-content-center mt-3">
-                  <a class="btn btn-square btn-primary mx-1" href=""
-                    ><i class="fab fa-facebook-f"></i
-                  ></a>
-                  <a class="btn btn-square btn-primary mx-1" href=""
-                    ><i class="fab fa-twitter"></i
-                  ></a>
-                  <a class="btn btn-square btn-primary mx-1" href=""
-                    ><i class="fab fa-instagram"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-              <div class="team-item text-center rounded overflow-hidden">
-                <div class="rounded-circle overflow-hidden m-4">
-                  <img class="img-fluid" src="img/team4.jpg" alt="" />
-                </div>
-                <h5 class="mb-0">Diana Sotomayor</h5>
-                <small>Ingeniera diseño</small>
-                <div class="d-flex justify-content-center mt-3">
-                  <a class="btn btn-square btn-primary mx-1" href=""
-                    ><i class="fab fa-facebook-f"></i
-                  ></a>
-                  <a class="btn btn-square btn-primary mx-1" href=""
-                    ><i class="fab fa-twitter"></i
-                  ></a>
-                  <a class="btn btn-square btn-primary mx-1" href=""
-                    ><i class="fab fa-instagram"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Team End -->
-
-      <!-- Testimonial Start -->
-      <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container">
-          <div class="text-center">
-            <h5
-              class="section-title ff-secondary text-center text-primary fw-normal"
-            >
-              Testimonios
-            </h5>
-            <h1 class="mb-5">Nuestros usuarios dicen!!!</h1>
-          </div>
-          <div class="owl-carousel testimonial-carousel">
-            <div class="testimonial-item bg-transparent border rounded p-4">
-              <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
-              <p>
-                Como investigador, la plataforma ha sido una herramienta
-                invaluable para mi trabajo. La amplia base de datos y la
-                facilidad para filtrar la información por región y tema me
-                permiten encontrar los estudios más relevantes de manera rápida
-                y eficiente. Gracias a esta plataforma, he podido profundizar en
-                mi investigación sobre los impactos del cambio climático en los
-                ecosistemas costeros de Colombia.
-              </p>
-              <div class="d-flex align-items-center">
-                <img
-                  class="img-fluid flex-shrink-0 rounded-circle"
-                  src="img/testimonial-2.jpg"
-                  style="width: 50px; height: 50px"
-                />
-                <div class="ps-3">
-                  <h5 class="mb-1">Sebastián Álvarez</h5>
-                  <small>Biólogo Marino</small>
-                </div>
-              </div>
-            </div>
-            <div class="testimonial-item bg-transparent border rounded p-4">
-              <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
-              <p>
-                Estoy realizando mi tesis sobre la diversidad de aves en los
-                bosques nublados. La plataforma me ha proporcionado acceso a
-                información crucial sobre la distribución de especies, áreas
-                protegidas y estudios previos en la región. Gracias a esto, he
-                podido diseñar un muestreo más eficiente y obtener resultados de
-                alta calidad.
-                <br />
-                <br />
-              </p>
-              <div class="d-flex align-items-center">
-                <img
-                  class="img-fluid flex-shrink-0 rounded-circle"
-                  src="img/testimonial-1.jpg"
-                  style="width: 50px; height: 50px"
-                />
-                <div class="ps-3">
-                  <h5 class="mb-1">Camila Restrepo</h5>
-                  <small>Estudiante de Biología</small>
-                </div>
-              </div>
-            </div>
-            <div class="testimonial-item bg-transparent border rounded p-4">
-              <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
-              <p>
-                Como emprendedor social, busco desarrollar proyectos que sean
-                amigables con el medio ambiente. La plataforma me ha ayudado a
-                conocer la legislación ambiental vigente, los incentivos
-                disponibles y las mejores prácticas para implementar proyectos
-                sostenibles. Gracias a esta información, he podido lanzar mi
-                negocio de turismo.
-                <br />
-                <br />
-              </p>
-              <div class="d-flex align-items-center">
-                <img
-                  class="img-fluid flex-shrink-0 rounded-circle"
-                  src="img/testimonial-3.jpg"
-                  style="width: 50px; height: 50px"
-                />
-                <div class="ps-3">
-                  <h5 class="mb-1">David Sierra</h5>
-                  <small>Emprendedor Social</small>
-                </div>
-              </div>
-            </div>
-            <div class="testimonial-item bg-transparent border rounded p-4">
-              <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
-              <p>
-                Siempre me ha interesado conocer más sobre el medio ambiente y
-                cómo puedo contribuir a su protección. La plataforma me ha
-                permitido acceder a información clara y sencilla sobre temas
-                como el reciclaje, la eficiencia energética y la importancia de
-                cuidar los recursos naturales. Gracias a esta plataforma, he
-                podido tomar decisiones más conscientes en mi vida diaria.
-              </p>
-              <div class="d-flex align-items-center">
-                <img
-                  class="img-fluid flex-shrink-0 rounded-circle"
-                  src="img/testimonial-4.jpg"
-                  style="width: 50px; height: 50px"
-                />
-                <div class="ps-3">
-                  <h5 class="mb-1">Laura Gómez</h5>
-                  <small>Profesional en Mercadeo</small>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Testimonial End -->
-
-      <!-- Footer Start -->
-      <div
-        class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn"
-        data-wow-delay="0.1s"
-      >
-        <div class="container py-5">
-          <div class="row g-5">
-            <div class="col-lg-3 col-md-6">
-              <h4
-                class="section-title ff-secondary text-start text-primary fw-normal mb-4"
-              >
-                Nosotros
-              </h4>
-              <a class="btn btn-link" href="about.html">Acerca de</a>
-              <a class="btn btn-link" href="contact.html">Contactanos</a>
-              <a class="btn btn-link" href="">Servicios</a>
-              <a class="btn btn-link" href="">Politica de privacidad</a>
-              <a class="btn btn-link" href="">Terminos y condiciones</a>
-            </div>
-            <div class="col-lg-3 col-md-6">
-              <h4
-                class="section-title ff-secondary text-start text-primary fw-normal mb-4"
-              >
-                Contacto
-              </h4>
-              <p class="mb-2">
-                <i class="fa fa-map-marker-alt me-3"></i>Sede principal Bogotá:
-                <br />
-                Calle 12b #04-79
-              </p>
-              <p class="mb-2">
-                <i class="fa fa-phone-alt me-3"></i>+57 318 4313047
-              </p>
-              <p class="mb-2">
-                <i class="fa fa-envelope me-3"></i>info@cunamb.com
-              </p>
-              <div class="d-flex pt-2">
-                <a class="btn btn-outline-light btn-social" href=""
-                  ><i class="fab fa-twitter"></i
-                ></a>
-                <a class="btn btn-outline-light btn-social" href=""
-                  ><i class="fab fa-facebook-f"></i
-                ></a>
-                <a class="btn btn-outline-light btn-social" href=""
-                  ><i class="fab fa-youtube"></i
-                ></a>
-                <a class="btn btn-outline-light btn-social" href=""
-                  ><i class="fab fa-linkedin-in"></i
-                ></a>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-              <h4
-                class="section-title ff-secondary text-start text-primary fw-normal mb-4"
-              >
-                Horario atencion
-              </h4>
-              <h5 class="text-light fw-normal">Lunes - Sabado</h5>
-              <p>07AM - 05PM</p>
-              <h5 class="text-light fw-normal">Sabado</h5>
-              <p>10AM - 12AM</p>
-            </div>
-            <div class="col-lg-3 col-md-6">
-              <h4
-                class="section-title ff-secondary text-start text-primary fw-normal mb-4"
-              >
-                Noticias
-              </h4>
-              <p>
-                Suscríbete y recibe las últimas novedades ambientales en tu
-                correo.
-              </p>
-              <div class="position-relative mx-auto" style="max-width: 400px">
-                <input
-                  class="form-control border-primary w-100 py-3 ps-4 pe-5"
-                  type="text"
-                  placeholder="Tu correo"
-                />
-                <button
-                  type="button"
-                  class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2"
-                >
-                  Unete
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="copyright">
-            <div class="row">
-              <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                &copy; <a class="border-bottom" href="#">Cunamb</a>, Todos los
-                derechos reservados.
-
-                <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                Diseñado por
-                <a class="border-bottom" href="https://cun.edu.co/"
-                  >Ing. AFHM.</a
-                ><br /><br />
-              </div>
-              <div class="col-md-6 text-center text-md-end">
-                <div class="footer-menu">
-                  <a href="">Inicio</a>
-                  <a href="">Cookies</a>
-                  <a href="">Help</a>
-                  <a href="">FQAs</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Footer End -->
-
-      <!-- Back to Top -->
-      <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"
-        ><i class="bi bi-arrow-up"></i
-      ></a>
     </div>
+  </div>
+</div>
 
+<!-- Modal para el video -->
+<div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content rounded-0">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Youtube Video</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Proporción 16:9 para el video -->
+        <div class="ratio ratio-16x9">
+          <iframe
+            class="embed-responsive-item"
+            src=""
+            id="video"
+            allowfullscreen
+            allowscriptaccess="always"
+            allow="autoplay"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Fin de la sección de reservas -->
+
+<!-- Inicio de la sección del equipo -->
+<div class="container-xxl pt-5 pb-3">
+  <div class="container">
+    <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+      <h5 class="section-title ff-secondary text-center text-primary fw-normal">
+        Nuestro equipo
+      </h5>
+      <h1 class="mb-5">Nuestros ingenieros</h1>
+    </div>
+    <div class="row g-4">
+      <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="team-item text-center rounded overflow-hidden">
+          <div class="rounded-circle overflow-hidden m-4">
+            <img class="img-fluid" src="img/team1.png" alt="" />
+          </div>
+          <h5 class="mb-0">Raul Bareño</h5>
+          <small>Ingeniero de sistemas</small>
+          <div class="d-flex justify-content-center mt-3">
+            <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+            <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
+            <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <!-- Sección para cada ingeniero -->
+      <!-- Similar estructura para otros miembros del equipo... -->
+    </div>
+  </div>
+</div>
+<!-- Fin de la sección del equipo -->
+
+      <!-- Inicio de la sección de testimonios -->
+<div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+  <div class="container">
+    <div class="text-center">
+      <h5 class="section-title ff-secondary text-center text-primary fw-normal">
+        Testimonios
+      </h5>
+      <h1 class="mb-5">Nuestros usuarios dicen!!!</h1>
+    </div>
+    <div class="owl-carousel testimonial-carousel">
+      <!-- Testimonio 1 -->
+      <div class="testimonial-item bg-transparent border rounded p-4">
+        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+        <p>
+          Como investigador, la plataforma ha sido una herramienta invaluable para mi trabajo...
+        </p>
+        <div class="d-flex align-items-center">
+          <img
+            class="img-fluid flex-shrink-0 rounded-circle"
+            src="img/testimonial-2.jpg"
+            style="width: 50px; height: 50px"
+          />
+          <div class="ps-3">
+            <h5 class="mb-1">Sebastián Álvarez</h5>
+            <small>Biólogo Marino</small>
+          </div>
+        </div>
+      </div>
+      <!-- Testimonio 2 -->
+      <div class="testimonial-item bg-transparent border rounded p-4">
+        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+        <p>
+          Estoy realizando mi tesis sobre la diversidad de aves en los bosques nublados...
+        </p>
+        <div class="d-flex align-items-center">
+          <img
+            class="img-fluid flex-shrink-0 rounded-circle"
+            src="img/testimonial-1.jpg"
+            style="width: 50px; height: 50px"
+          />
+          <div class="ps-3">
+            <h5 class="mb-1">Camila Restrepo</h5>
+            <small>Estudiante de Biología</small>
+          </div>
+        </div>
+      </div>
+      <!-- Testimonio 3 -->
+      <div class="testimonial-item bg-transparent border rounded p-4">
+        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+        <p>
+          Como emprendedor social, busco desarrollar proyectos que sean amigables con el medio ambiente...
+        </p>
+        <div class="d-flex align-items-center">
+          <img
+            class="img-fluid flex-shrink-0 rounded-circle"
+            src="img/testimonial-3.jpg"
+            style="width: 50px; height: 50px"
+          />
+          <div class="ps-3">
+            <h5 class="mb-1">David Sierra</h5>
+            <small>Emprendedor Social</small>
+          </div>
+        </div>
+      </div>
+      <!-- Testimonio 4 -->
+      <div class="testimonial-item bg-transparent border rounded p-4">
+        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+        <p>
+          Siempre me ha interesado conocer más sobre el medio ambiente y cómo puedo contribuir a su protección...
+        </p>
+        <div class="d-flex align-items-center">
+          <img
+            class="img-fluid flex-shrink-0 rounded-circle"
+            src="img/testimonial-4.jpg"
+            style="width: 50px; height: 50px"
+          />
+          <div class="ps-3">
+            <h5 class="mb-1">Laura Gómez</h5>
+            <small>Profesional en Mercadeo</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Fin de la sección de testimonios -->
+
+<!-- Inicio del pie de página -->
+<div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+  <div class="container py-5">
+    <div class="row g-5">
+      <div class="col-lg-3 col-md-6">
+        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Nosotros</h4>
+        <a class="btn btn-link" href="about.html">Acerca de</a>
+        <a class="btn btn-link" href="contact.html">Contáctanos</a>
+        <a class="btn btn-link" href="">Servicios</a>
+        <a class="btn btn-link" href="">Política de privacidad</a>
+        <a class="btn btn-link" href="">Términos y condiciones</a>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Contacto</h4>
+        <p class="mb-2">
+          <i class="fa fa-map-marker-alt me-3"></i>Sede principal Bogotá:<br />
+          Calle 12b #04-79
+        </p>
+        <p class="mb-2">
+          <i class="fa fa-phone-alt me-3"></i>+57 318 4313047
+        </p>
+        <p class="mb-2">
+          <i class="fa fa-envelope me-3"></i>info@cunamb.com
+        </p>
+        <div class="d-flex pt-2">
+          <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+          <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+          <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+          <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Horario de atención</h4>
+        <h5 class="text-light fw-normal">Lunes - Sábado</h5>
+        <p>07AM - 05PM</p>
+        <h5 class="text-light fw-normal">Sábado</h5>
+        <p>10AM - 12AM</p>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Noticias</h4>
+        <p>
+          Suscríbete y recibe las últimas novedades ambientales en tu correo.
+        </p>
+        <div class="position-relative mx-auto" style="max-width: 400px">
+          <input
+            class="form-control border-primary w-100 py-3 ps-4 pe-5"
+            type="text"
+            placeholder="Tu correo"
+          />
+          <button
+            type="button"
+            class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2"
+          >
+            Únete
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="copyright">
+      <div class="row">
+        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+          &copy; <a class="border-bottom" href="#">Cunamb</a>, Todos los derechos reservados.
+          Diseñado por <a class="border-bottom" href="https://cun.edu.co/">Ing. AFHM.</a><br /><br />
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <div class="footer-menu">
+            <a href="">Inicio</a>
+            <a href="">Cookies</a>
+            <a href="">Help</a>
+            <a href="">FAQs</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Fin del pie de página -->
+
+<!-- Botón de volver arriba -->
+<a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top">
+  <i class="bi bi-arrow-up"></i>
+</a>
     <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/tempusdominus/js/moment.min.js"></script>
-    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
-    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+<!-- Carga de la biblioteca jQuery desde un CDN (Content Delivery Network) -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
-  </body>
+<!-- Carga de Bootstrap 5 desde un CDN. Incluye los componentes de JavaScript necesarios, como modales y popovers. -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Carga de la biblioteca WOW.js para animaciones al hacer scroll. -->
+<script src="lib/wow/wow.min.js"></script>
+
+<!-- Carga de la biblioteca Easing.js para implementar efectos de desplazamiento suave. -->
+<script src="lib/easing/easing.min.js"></script>
+
+<!-- Carga de Waypoints, que permite activar funciones cuando se alcanza un punto en la página al hacer scroll. -->
+<script src="lib/waypoints/waypoints.min.js"></script>
+
+<!-- Carga de CounterUp, que permite animar contadores en la página cuando se desplaza hacia ellos. -->
+<script src="lib/counterup/counterup.min.js"></script>
+
+<!-- Carga de Owl Carousel, una biblioteca para crear carruseles de imágenes o contenido. -->
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+<!-- Carga de Moment.js para manejar fechas y horas. -->
+<script src="lib/tempusdominus/js/moment.min.js"></script>
+
+<!-- Carga de Moment Timezone, una extensión de Moment.js para manejar zonas horarias. -->
+<script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+
+<!-- Carga de Tempus Dominus, un plugin de Bootstrap para seleccionar fechas y horas. -->
+<script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+<!-- Template Javascript -->
+<!-- Carga del archivo JavaScript principal del template, que contiene scripts personalizados para la funcionalidad de la página. -->
+<script src="js/main.js"></script>
+</body>
 </html>
